@@ -17,5 +17,6 @@ def binary_search(items, target):
 
 
 print(binary_search([1, 2, 3, 4, 5, 6], 2))
+print(binary_search([1, 2, 3, 4, 5, 6], 4))
 print(binary_search([1, 2, 3, 4, 5, 6], 6))
 print(binary_search([1, 2, 3, 4, 5, 6], -1))
