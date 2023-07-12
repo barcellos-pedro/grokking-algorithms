@@ -43,9 +43,9 @@ def find_cheapest_node(costs):
 
         if value < cheapest:
             cheapest = value
-            cheapest_node_key = key
+            cheapest_node = key
 
-    return cheapest_node_key
+    return cheapest_node
 
 
 def dijkstra(graph, costs, parents):
@@ -73,6 +73,7 @@ def dijkstra(graph, costs, parents):
         node = find_cheapest_node(costs)
 
     # return path from start to end, following the parents dict
+    return {"costs": costs, "parents": parents}
 
 
 print(dijkstra(graph, costs, parents))
